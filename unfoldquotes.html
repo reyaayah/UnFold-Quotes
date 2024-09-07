@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-container">
+        <label class="theme-slider" for="checkbox">
+          <input type="checkbox" id="checkbox" onclick="changeTheme()" />
+          <div class="round slider"></div>
+        </label>
+      </div>
+    <div class="quote-container" id="quote-container">
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+            <p>quote Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellendus neque natus nam deserunt sint hic minima cum voluptate! Vitae magni exercitationem dolore quia facilis repellat sed ducimus ipsa tempora?</p>
+        </div>
+        <div class="quote-author">
+            <span id="author"></span>
+            <p>quote author</p>
+        </div>
+        <div class="button-container">
+            <button id="prev">Previous</button>
+            <button id="ran">Random</button>
+            <button id="next">Next</button>
+            
+        </div>
+    </div>
+    <div class="dropdown">
+        <img id="drop" src="down-arrow.png">
+        <div class="category">
+        <a href="#">Science</a>
+        <a href="#">Funny</a>
+        <a href="#">Romantic</a>
+        </div>
+      </div>
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

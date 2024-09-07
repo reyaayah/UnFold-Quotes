@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('lightimg.webp');
+  color: #000;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(200, 179, 179, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 30px;
+ 
+}
+
+.fa-quote-left {
+  font-size: 2rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+    gap: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #333;
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
+#drop{
+    margin-left: 30px;
+   
+    height: 50px;
+}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .category {
+    margin-left: 30px;
+    display: none;
+    position: absolute;
+    background-color: #6cb0c7;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .category a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.category a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .category {
+    display: block;
+  }
+  
+  
+  
+.dark-mode{
+    background: url('darkimg.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    .main{ 
+        
+        background: none;
+        color: rgb(238, 234, 234);
+    }
+    .quote-text{
+        color: whitesmoke;
+    }
+    .quote-author{
+        color: whitesmoke;
+    }
+    .quotebox{
+        background-color: rgba(143, 135, 135, 0.76);
+    }
+}
+.theme-container { 
+    margin-right: 30px;
+    display: flex; 
+    align-items: center; 
+} 
+  
+.theme-slider { 
+    display: inline-block; 
+    height: 34px; 
+    position: relative; 
+    width: 60px; 
+} 
+  
+.theme-slider input { 
+    display: none; 
+} 
+  
+.slider { 
+    background-color: #ccc; 
+    bottom: 0; 
+    cursor: pointer; 
+    left: 0; 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    transition: .4s; 
+} 
+  
+.slider:before { 
+    background-color: #f5eb2f; 
+    bottom: 4px; 
+    content: ""; 
+    height: 26px; 
+    left: 4px; 
+    position: absolute; 
+    transition: .4s; 
+    width: 26px; 
+} 
+  
+input:checked+.slider { 
+    background-color: #767373; 
+} 
+  
+input:checked+.slider:before { 
+    
+    transform: translateX(26px); 
+} 
+  
+.slider.round { 
+    border-radius: 34px; 
+} 
+  
+.slider.round:before { 
+    border-radius: 50%; 
+}
