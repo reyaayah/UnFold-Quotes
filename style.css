@@ -23,6 +23,17 @@ body {
   border-radius: 10px;
   background-color: rgba(200, 179, 179, 0.4);
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 10px; /* Space above the button container if needed */
+}
+
+.button-container img {
+  margin: 0 5px; /* Space between buttons */
+  cursor: pointer; /* Change cursor to pointer when hovering over buttons */
 }
 
 .quote-text {
@@ -50,7 +61,7 @@ body {
 
 button {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: 2.5rem;
   border: none;
   border-radius: 10px;
@@ -79,41 +90,37 @@ button:active {
     font-size: 2.5rem;
   }
 }
-#drop{
-    margin-left: 30px;
-   
-    height: 50px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .category {
-    margin-left: 30px;
-    display: none;
-    position: absolute;
-    background-color: #6cb0c7;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .category a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-.category a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .category {
-    display: block;
-  }
-  
-  
+
+/* Style the select element */
+.Category {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #70b6e9;
+  cursor: pointer;
+  font-family: "Indie Flower", cursive;
+}
+
+/* Style the select element when focused */
+.Category:focus {
+  border-color: #f8fafb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(239, 236, 235, 0.5);
+}
+
+/* Style the option elements */
+.Category option {
+  padding: 10px;
+}
+
+
   
 .dark-mode{
     background: url('darkimg.jpg');
