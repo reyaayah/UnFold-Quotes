@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="theme-container">
         <label class="theme-slider" for="checkbox">
-          <input type="checkbox" id="checkbox" onclick="changeTheme()" />
-          <div class="round slider"></div>
+            <input type="checkbox" id="checkbox" onclick="changeTheme()" />
+            <div class="round slider"></div>
         </label>
-      </div>
-      <div class="container">
+    </div>
+    <div class="container">
         <div class="font">
-        <span>-</span>
-        <input type="range" min="10" max="40" id="slider" value="30" onchange="changeSizeBySlider()" />
-        <span>+</span>
-      </div>
-      </div>
-      <div class="both">
-        <div class="quote-container" >
+            <span>-</span>
+            <input type="range" min="10" max="40" id="slider" value="30" onchange="changeSizeBySlider()" />
+            <span>+</span>
+        </div>
+    </div>
+    <div class="both">
+        <div class="quote-container">
             <div class="quote-text">
                 <i class="fas fa-quote-left"></i>
                 <span id="quote">Your quote will appear here...</span>
@@ -38,19 +37,15 @@
             <button id="next" onclick="nextQuote()">Next</button>
         </div>
         <div class="dropdown">
-        <p>Select Category</p>
-         <select  id="category" class="Category" onchange="Change()">
-             <option value="general">General</option>
-             <option value="success">Success</option>
-             
-             <option value="fun">Fun</option>
-             <option value="dream">Dream</option>
-         </select>
+            <p style="font-weight: bold;">Select Category</p>
+            <select id="category" class="Category" onchange="Change()">
+                <option value="general">General</option>
+                <option value="success">Success</option>
+                <option value="fun">Fun</option>
+                <option value="dream">Dream</option>
+            </select>
+        </div>
     </div>
-    </div>
-        
-     
-   
     <script src="script.js"></script>
 </body>
 </html>

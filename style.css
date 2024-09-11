@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
 body {
   display: flex;
   align-items: center;
@@ -10,13 +11,15 @@ body {
   font-family: "Indie Flower", cursive;
   text-align: center;
 }
-.both{
+
+.both {
   width: 50%;
   text-align: center;
 }
+
 .quote-container {
   width: 100%;
-  height: 220px;
+  height: 210px;
   padding: 30px 20px;
   border-radius: 10px;
   background-color: rgba(200, 179, 179, 0.4);
@@ -71,8 +74,9 @@ button:active {
 
 .font {
   display: flex;
-  align-items: center; 
-  gap: 40px;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
   font-weight: bold;
   position: absolute;
   top: 5%;
@@ -84,13 +88,14 @@ button:active {
   justify-content: space-between;
   display: block;
 }
+
 .Category {
   width: 200px;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #70b6e9;
+  background-color: #77afd8;
   cursor: pointer;
   font-family: "Indie Flower";
 }
@@ -100,108 +105,117 @@ button:active {
   outline: none;
   box-shadow: 0 0 5px rgba(239, 236, 235, 0.5);
 }
+
 .Category option {
   padding: 10px;
 }
 
-.dark-mode{
-    background: url('darkimg.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover;
-    .main{ 
-        background: none;
-        color: rgb(238, 234, 234);
-    }
-    .quote-text{
-        color: whitesmoke;
-    }
-    .quote-author{
-        color: whitesmoke;
-    }
-    .container{
-      color: whitesmoke;
-    }
-    .dropdown{
-      color: whitesmoke;
-    }
-    .quotebox{
-        background-color: rgba(143, 135, 135, 0.76);
-    }
+.dark-mode {
+  background: url('darkimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .main {
+    background: none;
+    color: rgb(238, 234, 234);
+  }
+
+  .quote-text {
+    color: whitesmoke;
+  }
+
+  .quote-author {
+    color: whitesmoke;
+  }
+
+  .container {
+    color: whitesmoke;
+  }
+
+  .dropdown {
+    color: whitesmoke;
+  }
+
+  .quotebox {
+    background-color: rgba(143, 135, 135, 0.76);
+  }
 }
-.theme-container { 
+
+.theme-container {
   position: absolute;
   top: 5%;
   left: 5%;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
-} 
-  
-.theme-slider { 
-    display: inline-block; 
-    height: 34px; 
-    position: relative; 
-    width: 60px; 
-} 
-  
-.theme-slider input { 
-    display: none; 
-} 
-  
-.slider { 
-    background-color: #ccc; 
-    bottom: 0; 
-    cursor: pointer; 
-    left: 0; 
-    position: absolute; 
-    right: 0; 
-    top: 0; 
-    transition: .4s; 
-} 
-  
-.slider:before { 
-    background-color: #f5eb2f; 
-    bottom: 4px; 
-    content: ""; 
-    height: 26px; 
-    left: 4px; 
-    position: absolute; 
-    transition: .4s; 
-    width: 26px; 
-} 
-  
-input:checked+.slider { 
-    background-color: #767373; 
-} 
-  
-input:checked+.slider:before { 
-    
-    transform: translateX(26px); 
-} 
-  
-.slider.round { 
-    border-radius: 34px; 
-} 
-  
-.slider.round:before { 
-    border-radius: 50%; 
+}
+
+.theme-slider {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-slider input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #f5eb2f;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked+.slider {
+  background-color: #767373;
+}
+
+input:checked+.slider:before {
+
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 900px) {
-  .both{
+  .both {
     width: 90%;
   }
+
   .quote-container {
     width: 90%;
     padding: 15px;
   }
 
   .quote-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .quote-author {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .button-container {
