@@ -1,44 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
-
-html {
-  box-sizing: border-box;
-}
-
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   min-height: 100vh;
   background-image: url('lightimg.webp');
   color: #000;
   font-family: "Indie Flower", cursive;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
+.both{
+  width: 50%;
+  text-align: center;
+}
 .quote-container {
-  width: auto;
-  max-width: 900px;
-  padding: 20px 30px;
+  width: 100%;
+  height: 220px;
+  padding: 30px 20px;
   border-radius: 10px;
   background-color: rgba(200, 179, 179, 0.4);
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-.button-container {
-  display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  margin-top: 10px; /* Space above the button container if needed */
-}
-
-.button-container img {
-  margin: 0 5px; /* Space between buttons */
-  cursor: pointer; /* Change cursor to pointer when hovering over buttons */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 }
 
 .quote-text {
-  font-size: 30px;
- 
+  font-size: 2rem;
 }
 
 .fa-quote-left {
@@ -53,10 +42,10 @@ body {
 }
 
 .button-container {
-    gap: 20px;
-  margin-top: 15px;
+  gap: 100px;
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 button {
@@ -76,27 +65,25 @@ button:hover {
 }
 
 button:active {
-  transform: translate(0, 0.3rem);
+  transform: translateY(2px);
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-/* Media Query: Tablet or Smaller */
-@media screen and (max-width: 1000px) {
-  .quote-container {
-    margin: auto 10px;
-  }
-
-  .quote-text {
-    font-size: 2.5rem;
-  }
+.font {
+  display: flex;
+  align-items: center; 
+  gap: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  right: 4%;
 }
+
+
 .dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
+  justify-content: space-between;
+  display: block;
 }
-
-/* Style the select element */
 .Category {
   width: 200px;
   padding: 10px;
@@ -105,29 +92,23 @@ button:active {
   border-radius: 4px;
   background-color: #70b6e9;
   cursor: pointer;
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower";
 }
 
-/* Style the select element when focused */
 .Category:focus {
   border-color: #f8fafb;
   outline: none;
   box-shadow: 0 0 5px rgba(239, 236, 235, 0.5);
 }
-
-/* Style the option elements */
 .Category option {
   padding: 10px;
 }
 
-
-  
 .dark-mode{
     background: url('darkimg.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
     .main{ 
-        
         background: none;
         color: rgb(238, 234, 234);
     }
@@ -137,14 +118,23 @@ button:active {
     .quote-author{
         color: whitesmoke;
     }
+    .container{
+      color: whitesmoke;
+    }
+    .dropdown{
+      color: whitesmoke;
+    }
     .quotebox{
         background-color: rgba(143, 135, 135, 0.76);
     }
 }
 .theme-container { 
-    margin-right: 30px;
-    display: flex; 
-    align-items: center; 
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 } 
   
 .theme-slider { 
@@ -195,4 +185,26 @@ input:checked+.slider:before {
   
 .slider.round:before { 
     border-radius: 50%; 
+}
+
+@media screen and (max-width: 900px) {
+  .both{
+    width: 90%;
+  }
+  .quote-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .quote-text {
+    font-size: 1.25rem;
+  }
+
+  .quote-author {
+    font-size: 1.25rem;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
 }
